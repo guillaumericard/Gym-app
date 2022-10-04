@@ -4,11 +4,23 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false"
       >
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar>
+      Menu
+    </mat-toolbar>
+    
     <mat-nav-list>
-      <a mat-list-item href="#">Settings</a>
-      <a mat-list-item href="#">You</a>
-      <a mat-list-item href="#">Bitch</a>
+      <a mat-list-item href="#" class="list">
+        Settings
+        <img src="../../assets/kettlebell.png" alt="" class="image-side">
+      </a>
+      <a mat-list-item href="#" class="list">
+        About us
+        <img src="../../assets/kettlebell.png" alt="" class="image-side">
+      </a>
+      <a mat-list-item href="#" class="list">
+        Disclaimers
+        <img src="../../assets/kettlebell.png" alt="" class="image-side">
+      </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -22,7 +34,11 @@
       >
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span class="title">Gym-App</span>
+      <img src="../../assets/kettlebell2.png" alt="" class="image-left image">
+      <span class="title">
+        Gym-App
+      </span>
+      <img src="../../assets/kettlebell2.png" alt="" class="image-right image">
     </mat-toolbar>
     <app-login></app-login>
   </mat-sidenav-content>
