@@ -15,3 +15,12 @@
   top: 0;
   z-index: 1;
 }
+
+.topbar{
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  font-size: 56px;
+}

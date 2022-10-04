@@ -11,7 +11,7 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar color="primary" class="topbar">
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -20,9 +20,8 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>Gym-App</span>
+      <span class="title">Gym-App</span>
     </mat-toolbar>
-        <app-login></app-login>
-        <mat-slider min="1" max="100" step="1" value="50"></mat-slider>
+    <app-login></app-login>
   </mat-sidenav-content>
 </mat-sidenav-container>
