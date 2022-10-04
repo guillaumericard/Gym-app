@@ -15,12 +15,15 @@
   top: 0;
   z-index: 1;
 }
-
+ 
 .topbar{
   justify-content: center;
   align-items: center;
-}
+} 
+
 
 .title{
+  justify-content: center;
+  align-items: center;
   font-size: 56px;
 }
