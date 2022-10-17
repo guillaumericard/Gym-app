@@ -11,6 +11,7 @@
       <form>
         <p>
           <mat-form-field>
+            <mat-label>Username</mat-label>
             <input type="text" matInput placeholder="Username" formControlName="username">
             <div *ngIf=""></div>
           </mat-form-field>
@@ -18,15 +19,20 @@
 
         <p>
           <mat-form-field>
+          
             <input type="password" matInput placeholder="Password" formControlName="password" required minlength="6">
             <div *ngIf=""></div>
           </mat-form-field>
         </p>
 
-
-
+        
+        
+        
         <div class="button">
-          <button type="submit" mat-button>Go</button>
+          <button type="submit" mat-stroked-button>Go</button>
+        </div>
+        <div class="notRegistered d-flex align-items-end" style="height:10vh; color: rgba(0,0,0,.54) ;text-decoration:underline;">
+          Not Registered Yet?
         </div>
 
       </form>
