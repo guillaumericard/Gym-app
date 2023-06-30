@@ -1,43 +1,35 @@
-<div class="vh-100 back">
-<div class="vh-30 container-fluid d-flex justify-content-center align-items-center">
-  <img src="../../assets/kettlebell2.png" style="height:3.5rem; padding-right: 3.5rem;" alt="">
-  GYM-APP
-  <img src="../../assets/kettlebell2.png" style="height:3.5rem ;padding-left: 3.5rem;" alt="">
+<div class="container">
+  <div class="header d-flex justify-content-around pt-3">
+    <a class="header-button" href="">About us</a>
+    <a class="header-button" href="">About you</a>
+    <a class="header-button" href="">Pricing</a>
+  </div>
+  <div class="content d-flex flex-column align-items-center pt-3 font-bold">
+    <h1 class="top-title">JOIN OUR</h1>
+    <h1 class="pt-5">COMMUNITY</h1>
+  </div>
+  <div class="login d-flex align-items-center flex-column">
+    <mat-form-field [style.width.px]="350">
+      <mat-label>Username</mat-label>
+      <input matInput />
+    </mat-form-field>
+    <mat-form-field [style.width.px]="350">
+      <mat-label>Password</mat-label>
+      <input matInput />
+    </mat-form-field>
+    <a class="register" href="">Need to register? Click here</a>
+  </div>
+  <div class="icons">
+    <img src="../../assets/fb_icon.png" alt="" width="40px" />
+    <img src="../../assets/twitt_icon.svg" alt="" width="40px" />
+    <img src="../../assets/yt_icon.svg" alt="" width="40px" />
+  </div>
 </div>
-<div class="vh-60 container-fluid py-9 d-flex justify-content-center align-items-start">
-  <mat-card class=" card d-flex flex-column justify-content-center">
-    <mat-card-title class="d-flex justify-content-center">Login</mat-card-title>
-    <mat-card-content class="d-flex justify-content-center">
-      <form>
-        <p>
-          <mat-form-field>
-            <mat-label>Username</mat-label>
-            <input type="text" matInput placeholder="Username" formControlName="username">
-            <div *ngIf=""></div>
-          </mat-form-field>
-        </p>
 
-        <p>
-          <mat-form-field>
-          
-            <input type="password" matInput placeholder="Password" formControlName="password" required minlength="6">
-            <div *ngIf=""></div>
-          </mat-form-field>
-        </p>
-
-        
-        
-        
-        <div class="button">
-          <button type="submit" mat-stroked-button>Go</button>
-        </div>
-        <div class="notRegistered d-flex align-items-end" style="height:10vh; color: rgba(0,0,0,.54) ;text-decoration:underline;">
-          Not Registered Yet?
-        </div>
-
-      </form>
-    </mat-card-content>
-  </mat-card>
-</div>
-<div class="footer d-flex justify-content-center align-items-end">Ricard - 2022</div>
-</div>
+<img
+  src="../../assets/barbell-deadlift-technique-01.jpg"
+  class="img-fluid p-5 img-bg"
+  height="70%"
+  width="70%"
+  alt=""
+/>
